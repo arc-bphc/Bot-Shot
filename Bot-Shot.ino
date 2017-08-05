@@ -146,8 +146,8 @@ void move_arm(){
     
     if(commands[0]==241){
      arm_pos=arm_pos-1;
-     if(arm_pos<100)
-        arm_pos=100;
+     if(arm_pos<70)
+        arm_pos=70;
     }     
     else if(commands[0]==242){
      arm_pos=arm_pos+1;
@@ -253,7 +253,7 @@ void setup() {
 //  pinMode(tx,OUTPUT);
   
   Serial.begin(9600);
-  mySerial.begin(9600);
+  //mySerial.begin(9600);
 
   digitalWrite(lmotor1,HIGH);
   digitalWrite(lmotor2,HIGH);
